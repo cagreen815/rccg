@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*===========================
+        HEADER SECTION
+=============================*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/large-group-at-concert.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.logo{
+width: 60px;
+}
+
+nav{
+    /* background-color: #f44336; */
+    display: flex;
+    padding: 1% 8%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+ .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+ }
+
+ .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #009140;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+ }
+
+ .nav-links ul li:hover::after{
+    width: 100%;
+ }
+
+ /* .donation-btn{
+    background-color: #009140;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 34px;
+    font-size: 13px;
+    background-color: #009140;
+    border-radius: 18px;
+    cursor: pointer;
+ } */
+
+/*===========================
+        HERO SECTION
+=============================*/
+ .text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+ }
+
+ .text-box h1{
+    font-size: 45px;
+ }
+
+ .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+ }
+
+.text-box-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 34px;
+    font-size: 13px;
+    background-color: #009140;
+    border-radius: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.text-box-btn:hover{
+    background-color: #17b75c;
+}
+
+.text-box-btn .fa-circle-play{
+    margin-right: 4px;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+/*===========================
+        NAVBAR MEDIA QUERY
+=============================*/
+@media (max-width: 700px) {
+    .text-box h1{
+        font-size: 20px;
+     } 
+
+     nav{
+        padding-top: 10px;
+     }
+     .nav-links ul li{
+        display: block;
+     }
+     .nav-links{
+        position: fixed;
+        background: #333;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+     }
+
+     nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+     }
+
+     .nav-links ul{
+        padding: 30px;
+     }
+}
+
+/*===========================
+        PROFILE SECTION
+=============================*/
+.profile{
+    background-color: #3D3533;
+
+}
+.pastors-profile{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pastors{
+    width: 350px;
+}
+
+.pastors-profile h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+}
+
+.pastors-profile p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    max-width: 600px;
+}
+
+.primary-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 10px 0;
+    padding: 10px 34px;
+    font-size: 13px;
+    background-color: #009140;
+    border-radius: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.primary-btn:hover{
+    background-color: #17b75c;
+}
+/*===========================
+        MINISTRIES SECTION
+=============================*/
+
+.ministries{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.ministries h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.ministries p{
+    color: #333;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.ministry-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.ministry-col img{
+    width: 100%;
+}
+
+.primary-btn .fa-circle-arrow-right{
+    margin-left: 5px;
+}
+
+.ministry-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+@media (max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+    .pastors-profile{
+    flex-direction: column; 
+    text-align: center;
+   
+    }
+    .pastors{
+        width: 250px;
+    }
+
+    .profile{
+        padding-bottom: 30px;
+    }
+} 
+
+/*===========================
+        GALLERY SECTION
+=============================*/
+.gallery{
+    width: 80%;
+    height: 100vh;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gallery-intro{
+    max-width: 500px;
+    margin: auto;
+}
+
+.gallery-intro h2{
+    font-size: 36px;
+
+}
+
+.gallery p{
+    margin: 20px auto;
+}
+
+.gallery-photo img{
+    width: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.gallery-container{
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery-photo{
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media (max-width: 700px) {
+    .gallery{
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    .gallery-container{
+        flex-direction: column;
+    }
+    .gallery-photo img{
+        width: 100%;
+        
+    }
+    .gallery-intro{
+        text-align: center;
+    }
+    .gallery-photo img{
+        display: none;
+    }
+    
+}
+
+/*===========================
+        DONATIONS SECTION
+=============================*/
+.donation{
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.donation h2{
+    /* text-align: center; */
+    color: #009140;
+    margin-bottom: 20px;
+}
+.donation-row{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.donation-col{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.donation-option{
+    margin-bottom: 20px;
+}
+.donation-option .fa-solid{
+    color: #009140;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+@media (max-width: 700px) {
+    .donation-col{
+        display: flex;
+    flex-direction: column; 
+   }
+}
+
+/*===========================
+     HOURS OF OPERATION SECTION
+=============================*/
+.hours-of-op-h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+}
+table{
+    border-collapse: collapse;
+    margin: 25px auto;
+    width: 40%;
+    box-shadow: 0 0 5px rgba(0,0,0, .25);
+}
+
+/* table tr{
+  padding:  .45em;  
+} */
+
+thead tr{
+    background-color: #009140;
+}
+
+tbody tr:nth-child(even){
+    background-color: #cacaca;
+}
+
+table th, table td{
+    font-size: 14px;
+    padding: 16px;
+    text-align: center;
+}
+thead th{
+    color: #fff;
+    font-size: 16px;
+}
+
+@media (max-width: 700px) {
+    /* table{
+        border: 3px solid rgb(83, 17, 17);
+    } */
+    .hours-of-op-h2{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    table thead tr{
+        display: none;
+    }
+    table tr{
+        display: block;
+    }
+    table th, table td{
+        padding: .5em;
+    }
+    table td{
+        text-align: center;
+        display: block;
+        font-size: 14px;
+    }
+    /* table td::before{
+        content: attr(data-title) ": ";
+        float: left;
+    } */
+    /* tbody tr:nth-child(even){
+        background-color: #6e0737;
+        color: #fff;
+    } */
+}
+/*===========================
+        FOOTER SECTION
+=============================*/
+.footer{
+width: 100%;
+text-align: center;
+padding: 20px 0;
+font-size: 13px;
+background-color: #333;
+color: #fff;
+}
+
+.sm-icons .fa-brands {
+    color: #009140;
+    font-size: 18px;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+@media (max-width: 700px) {
+    .footer-contact-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        font-size: 13px;
+    }
+
+
+}
+
+/*==================================================
+                     PASTOR'S PROFILE PAGE
+====================================================*/
+
+.sub-header{
+    background-color: #333;
+    color: #fff;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0 50px 0;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 20px 2px;
+}
+
+.about-col img{
+    width: 100%;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 12px;
+}
+
+.about-col p{
+    padding: 10px 0;
+}
+
+
+.sub-footer{
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+     .about-col h1{
+        text-align: center;
+    }
+}
+
+
+
+/*==================================================
+                     CONTACT PAGE
+====================================================*/
+.location{
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 45%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-top: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    margin-bottom: 10px;
+    /* align-items: center; */
+}
+
+/* .contact-col span{
+    text-align: left;
+} */
+
+.contact-col div .fa-solid{
+    font-size: 20px;
+    color: #009140;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    font-size: 12px;
+}
+/* .contact-col div h3{
+    background-color: rgb(246, 82, 109);
+font-size: 15px;
+margin-bottom: 5px;
+color: #555;
+font-weight: 400;
+} */
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* form{
+    background-color: steelblue;
+    padding: 20px;
+    border-radius: 5px;
+} */
+/*==================================================
+                     PHOTO GALLERY PAGE
+====================================================*/
+.pg-gallery-container{
+    width: 90%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.pg-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.pg-gallery img{
+  width: 100%;  
+}
+
+/*==================================================
+                     SERVICES PAGE
+====================================================*/
+.services-container {
+    position: relative;
+    width: 50%;
+    /* height: 100vh; */
+  }
+  
+  .services-img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .services-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+/*==================================================
+                     GALLERY PAGE
+====================================================*/
+.pg-gallery-container{
+    width: 80%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.pg-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.pg-gallery img{
+  width: 100%;  
+}
+
+/*==================================================
+                     SERVICES PAGE
+====================================================*/
+.service-section
+{
+    /* margin: 50px 0; */
+    padding: 40px 0;
+}
+.services-h1
+{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+
+}
+.services-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding: 20px 0; */
+    /* margin: 20px auto; */
+}
+
+.services-container img{
+    width: 35%;
+}
+
+.services-container h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+
+.bold{
+    font-weight: bold;
+}
+.services-container p{
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+.section-bkgrd{
+    background-color: #F6F9FC;
+}
+
+@media (max-width: 700px) {
+    .services-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-container img{
+        width: 80%;
+        margin: 30px auto;
+    }
+}

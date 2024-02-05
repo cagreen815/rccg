@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img class="logo" src="images/RCCG-LOGO-PNG.png" alt="Logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Pastor's Profile</a></li>
+            <li><a href="gallery.html">Our Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="">Online Donation</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>RCCG New Covenant Church</h1>
+        <p>Monrovia</p>
+        <p>Join Us Every Sunday at 10AM EST</p>
+        <a class="text-box-btn" href=""
+          ><i class="fa-solid fa-circle-play"></i> WATCH ONLINE</a
+        >
+      </div>
+    </section>
+
+    <!--============== GALLERY SECTION=============== -->
+    <section class="gallery">
+      <div class="gallery-intro">
+        <h2>Our Gallery</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+          temporibus delectus similique odio ducimus dolore distinctio facere,
+          quam deserunt magnam assumenda explicabo facilis quos placeat nemo non
+          repudiandae. Est, ea.
+        </p>
+        <a href="gallery.html" class="primary-btn"
+          >View full gallery<i class="fa-solid fa-circle-arrow-right"></i
+        ></a>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery-col">
+          <div class="gallery-photo">
+            <img src="images/gallery-img1.jpg" alt="" />
+          </div>
+          <div class="gallery-photo">
+            <img src="images/gallery-img2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="gallery-col">
+          <div class="gallery-photo">
+            <img src="images/gallery-img3.jpg" alt="" />
+          </div>
+          <div class="gallery-photo">
+            <img src="images/gallery-img6.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============== DONATION SECTION=============== -->
+    <section class="donation">
+      <div class="donation-row">
+        <div class="donation-col">
+          <h2>For Donations:</h2>
+          <div class="donation-option">
+            <i class="fa-solid fa-envelopes-bulk"></i>
+            <span>
+              <p class="bold">Zelle</p>
+              <p>
+                240-578-1108 & <br />
+                rccgncc18@gmail.com
+              </p>
+            </span>
+          </div>
+          <!-- <div class="donation-option">
+            <i class="fa-solid fa-credit-card"></i>
+            <span>
+              <p>Paypal</p>
+              <p>$church</p>
+            </span>
+          </div> -->
+          <div class="donation-option">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>
+              <p class="bold">CashApp</p>
+              <p>
+                240-578-1108 & <br />
+                $Rccgnewcovenantch
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="donation-container">
+        <h2>For Donations</h2>
+
+        <div class="donation-flex-list">
+          <i class="fa-solid fa-envelopes-bulk"></i>
+          <div class="donation-option">
+            <p>ZELLE</p>
+            <p>danations@gamil.com</p>
+          </div>
+        </div>
+
+        <div class="donation-flex-list">
+          <i class="fa-brands fa-paypal"></i>
+          <div class="donation-option">
+            <p>Paypal</p>
+            <p>www.paypal.com</p>
+          </div>
+        </div>
+
+        <div class="donation-flex-list">
+          <i class="fa-solid fa-credit-card"></i>
+          <div class="donation-option">
+            <p>Cash App</p>
+            <p>$Godislove</p>
+          </div>
+        </div>
+
+      </div> -->
+
+    <!-- =============HOURS OF OPERATION============== -->
+    <h2 class="hours-of-op-h2">Hours of Operation</h2>
+    <div class="hours-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sunday</td>
+            <td>10:00 AM - 12:15 PM</td>
+          </tr>
+          <tr>
+            <td >Monday</td>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <td >Tuesday</td>
+            <td>6:30 PM - 8:00 PM</td>
+          </tr>
+          <tr>
+            <td >Wednesday</td>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <td >Thursday</td>
+            <td>6:30 PM - 8:00 PM</td>
+          </tr>
+          <tr>
+            <td >Friday</td>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <td >Saturday</td>
+            <td>Closed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--============== FOOTER SECTION=============== -->
+    <footer>
+      <section class="footer">
+        <p class="footer-contact-info">
+          <span>4929 Green Valley Road, Monrovia, MD </span>
+          <span>| Phone: 240-123-4567 |</span> <span>Email: @gmail.com</span>
+        </p>
+        <div class="sm-icons">
+          <a href="" class="social-media-icon"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="" class="social-media-icon"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+          <a href="" class="social-media-icon"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+        <p>Copyright © 2024 --Church. All right Reserved.</p>
+      </section>
+    </footer>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b3c606ac86.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
